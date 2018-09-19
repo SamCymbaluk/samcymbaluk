@@ -1,0 +1,136 @@
+<app-navbar></app-navbar>
+
+<div *ngIf="!resume" class="loading">
+  <mat-spinner color="accent"></mat-spinner>
+</div>
+
+<div id="navbar_spacing"></div>
+<div *ngIf="resume" id="wrapper">
+  <div class="resume-content">
+    <h1>{{resume.name}}</h1>
+    <div class="contact-info">
+      <div *ngFor="let item of resume.contact_info">
+        <div class="image-container"><img [src]="item.icon" [alt]="item.name" [title]="item.name"/></div>
+        <a [href]="item.url">{{item.text}}</a>
+      </div>
+    </div>
+    <div class="resume-body">
+      <div class="section-wrapper">
+        <div class="section" id="skills-section">
+          <h2>Technical Skills</h2>
+          <div class="section-content">
+            <div *ngFor="let skill of resume.skills" class="skill">{{skill}}</div>
+          </div>
+        </div>
+        <div class="section" id="work-section">
+          <h2>Work Experience</h2>
+          <div class="section-content">
+            <div *ngFor="let job of resume.work_experience" class="section-entry">
+              <div>
+                <div class="section-entry-header">
+                  <h3>{{job.name}}</h3><br>
+                </div>
+                <div class="inner-content">
+                  <ul><li *ngFor="let point of job.bullet_points">{{point}}</li></ul>
+                </div>
+                <div class="right-info">
+                  <div *ngFor="let info of job.extra_info">
+                    <div class="image-container"><img [src]="info.icon"/></div>
+                    <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
+                    <span *ngIf="!info.url">{{info.text}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="community-section">
+          <h2>Community Involvement</h2>
+          <div class="section-content">
+            <div *ngFor="let item of resume.community_involvement" class="section-entry">
+              <div>
+                <div class="section-entry-header">
+                  <h3>{{item.name}}</h3>
+                </div>
+                <div class="inner-content">
+                  <ul><li *ngFor="let point of item.bullet_points">{{point}}</li></ul>
+                </div>
+                <div class="right-info">
+                  <div *ngFor="let info of item.extra_info">
+                    <div class="image-container"><img [src]="info.icon"/></div>
+                    <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
+                    <span *ngIf="!info.url">{{info.text}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="projects-section">
+          <h2>Personal Projects</h2>
+          <div class="section-content">
+            <div *ngFor="let project of resume.personal_projects" class="section-entry">
+              <div>
+                <div class="section-entry-header">
+                  <h3>{{project.name}}</h3>
+                </div>
+                <div class="inner-content">
+                  <ul><li *ngFor="let point of project.bullet_points">{{point}}</li></ul>
+                </div>
+                <div class="right-info">
+                  <div *ngFor="let info of project.extra_info">
+                    <div class="image-container"><img [src]="info.icon"/></div>
+                    <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
+                    <span *ngIf="!info.url">{{info.text}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="awards-section">
+          <h2>Honours and Awards</h2>
+          <div class="section-content">
+            <div *ngFor="let award of resume.awards" class="section-entry compact">
+              <div class="section-entry-header">
+                <h4>{{award.name}}</h4>
+              </div>
+              <div class="inner-content">
+                <p *ngFor="let point of award.bullet_points">{{point}}</p>
+              </div>
+              <div class="right-info">
+                <div *ngFor="let info of award.extra_info">
+                  <div class="image-container"><img [src]="info.icon"/></div>
+                  <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
+                  <span *ngIf="!info.url">{{info.text}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="education-section">
+          <h2>Education</h2>
+          <div class="section-content">
+            <div *ngFor="let school of resume.education" class="section-entry compact">
+              <div class="section-entry-header">
+                <h4>{{school.name}}</h4>
+              </div>
+              <div class="inner-content">
+                <p *ngFor="let point of school.bullet_points">{{point}}</p>
+              </div>
+              <div class="right-info">
+                <div *ngFor="let info of school.extra_info">
+                  <div class="image-container"><img [src]="info.icon"/></div>
+                  <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
+                  <span *ngIf="!info.url">{{info.text}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

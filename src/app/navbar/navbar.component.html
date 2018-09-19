@@ -1,0 +1,48 @@
+<div class="accent-bar mat-elevation-z1"></div>
+<mat-toolbar color="primary" [ngClass]="mobileMenuState === 'in' ? '' : 'mat-elevation-z1'">
+
+  <!-- Left side - desktop -->
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/resume">Resume</button>
+    <!-- Projects temporarily disabled -->
+    <!-- <button mat-button routerLink="/">Projects</button> -->
+  </div>
+  <!-- Left side - mobile -->
+  <div fxLayout="row" fxHide="false" fxHide.gt-sm>
+   <p>Sam Cymbaluk</p>
+  </div>
+
+  <span class="fill-remaining-space"></span>
+
+  <!-- Right side - desktop -->
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <a *ngFor="let medium of socialMedia" href="{{medium.url}}">
+      <button mat-icon-button class="btn-large">
+        <mat-icon class="social-icon" svgIcon="{{medium.icon}}"></mat-icon>
+      </button>
+    </a>
+  </div>
+  <!-- Right side - mobile -->
+  <div fxLayout="row" fxHide="false" fxHide.gt-sm>
+    <button mat-icon-button="" (click)="toggleMobileMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+</mat-toolbar>
+
+<!-- Expansion Menu - mobile -->
+<div [@slideInOut]="mobileMenuState" class="expansion-div mat-elevation-z1">
+  <div class="expansion-div-content">
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/resume">Resume</button>
+    <div fxLayout="row">
+      <a *ngFor="let medium of socialMedia" href="{{medium.url}}">
+        <button mat-icon-button class="btn-large">
+          <mat-icon class="social-icon" svgIcon="{{medium.icon}}"></mat-icon>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>

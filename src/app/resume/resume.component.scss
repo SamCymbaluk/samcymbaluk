@@ -1,0 +1,354 @@
+@import '~@angular/material/theming';
+@import '~src/theme.scss';
+
+app-navbar {
+  @media print {
+    display: none;
+  }
+}
+
+app-footer {
+  @media print {
+    display: none;
+  }
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #DDD;
+}
+
+mat-spinner {
+  margin: 10rem auto;
+}
+
+/*
+Resume styling
+ */
+
+.resume-content h2 {
+  font-size: 32px;
+  margin-left: 10px;
+  padding-left: 0;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.resume-content .section ul {
+  padding-left: 20px;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left: 10px;
+}
+
+.inner-content li, .right-info div {
+  line-height: 22px;
+}
+
+.right-info > div {
+  height: 22px;
+}
+
+.contact-info .image-container, .right-info .image-container {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.contact-info .image-container img, .right-info .image-container img {
+  margin-bottom: -2px;
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.resume-content .section-entry .right-info img {
+  margin-bottom: -3px;
+}
+
+.contact-info .image-container {
+  position: relative;
+  top: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1.title {
+  text-align: center;
+}
+
+#navbar_spacing {
+  margin-top: 4rem;
+  @media print {
+    margin-top: 0.5rem;
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  margin: 0 auto 4rem;
+  width: 950px;
+}
+
+.textsection {
+  color: #333;
+}
+
+p {
+  margin: 0;
+  line-height: 24px;
+}
+
+a {
+  color: #5288f9;
+
+  -webkit-transition: text-shadow 0.2s ease, color 0.2s ease;
+  -moz-transition: text-shadow 0.2s ease, color 0.2s ease;
+  -o-transition: text-shadow 0.2s ease, color 0.2s ease;
+  -ms-transition: text-shadow 0.2s ease, color 0.2s ease;
+  transition: text-shadow 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  color: #5288f9;
+  text-shadow: 0 0 1px #6E96EA, 0 0 1px #6E96EA;
+}
+
+img {
+  opacity: 1;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+hr {
+  margin-top: 0;
+
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #5288f9;
+  padding: 0;
+}
+
+html body * {
+  max-height: 999999px;
+}
+
+.resume-content * {
+  overflow: visible;
+}
+
+.resume-content * {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #444;
+  font-size: 16px;
+}
+
+.resume-content a {
+  text-decoration:underline;
+  color: #5288f9;
+}
+
+.resume-content .resume-body {
+  padding-top: 10px;
+}
+
+.resume-content h1, .resume-content h1 * {
+  padding:0;
+  margin:0;
+  font-size: 72px;
+  display: inline-block;
+}
+
+.resume-content .contact-info {
+  margin-left: 2px;
+  position: relative;
+  left: 145px;
+  display: inline-block;
+  width: 277px;
+}
+
+.resume-content .contact-info > div {
+  margin-bottom: -2px;
+}
+
+.resume-content .contact-info a {
+  font-size: 14px;
+}
+
+.resume-content h2, .resume-content h3, .resume-content h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 5px;
+}
+
+.resume-content h3 {
+  font-size: 24px;
+}
+
+.resume-content h4 {
+  font-size: 18px;
+}
+
+.resume-content .section .section-content {
+  margin-left: 10px;
+}
+
+.resume-content .section-wrapper {
+  margin-top: -25px;
+}
+
+.resume-content .section ul {
+  padding-left: 20px;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left: 10px;
+}
+
+.resume-content .section ul li > span {
+  position: relative;
+  left: -8px;
+}
+
+.resume-content .section-entry {
+  position:relative;
+  padding: 3px 0px 5px 0px;
+  border-radius: 3px;
+  page-break-inside: avoid;
+}
+
+.resume-content .section-entry .inner-content {
+  width: 600px;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.resume-content .section-entry .right-info {
+  float: right;
+  text-align: left;
+  margin-top: 0px;
+  width: 277px;
+}
+
+.resume-content .section-entry.compact .right-info {
+  margin-top: -22px;
+}
+
+.resume-content .section-entry .right-info * {
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.resume-content {
+  position:relative;
+}
+
+.resume-content h1, .resume-content h2, .resume-content h3, .resume-content h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.resume-content p {
+  margin: 0;
+}
+
+.resume-content .section-entry-header > * {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.resume-content .header_info {
+  margin-left: 10px;
+  font-size: 12px;
+  vertical-align: bottom;
+  height: 22px;
+}
+
+.section-bar {
+  content: "";
+  border-top: 1px solid #EEE;
+  top: 0;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.section-entry + .section-entry:not(.compact) .section-entry-header {
+  margin-top: 10px;
+}
+
+.skill {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 8px;
+  background-color: mat-color($app-primary);
+  border-radius: 10px;
+}
+
+.section h2:after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  margin-left: 10px;
+  width: 100%;
+  border-top: 2px solid #5288f9;
+}
+
+.inner-content li, .right-info div {
+  line-height: 22px;
+}
+
+.right-info > div {
+  height: 22px;
+}
+
+.contact-info .image-container, .right-info .image-container {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.contact-info .image-container img, .right-info .image-container img {
+  margin-bottom: -2px;
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.resume-content .section-entry .right-info img {
+  margin-bottom: -3px;
+}
+
+.contact-info .image-container {
+  position: relative;
+  top: 2px;
+}
+
+.contact-info .image-container:nth-child(1) {
+  top: 0;
+}
+
+.skill-header > h3 {
+  font-size: 18px;
+  padding-left: 0
+}
+
+.inner-content > p {
+  margin-left: 11px;
+}

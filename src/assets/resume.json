@@ -45,6 +45,22 @@
       ]
     },
     {
+      "name": "Cathedral High School",
+      "bullet_points": [
+        "Developed the prototype for a web app to gamify the creation of MLA and APA style citations as part of my grade 12 computer science course",
+        "Upon completion of the course, was hired part time by Cathedral's teacher-librarian to continue building the concept into a usable product",
+        "The app supports an admin panel which enables administrators to modify quiz content and allows teachers to view submissions from students in their class"
+      ],
+      "extra_info": [
+        {"text": "Cathedral High School", "icon": "assets/icons/link.svg", "url":"https://chs.hwcdsb.ca/"},
+        {"text": "Github Project", "icon": "assets/icons/github.svg", "url":"https://github.com/SamCymbaluk/citation-practice-webapp"},
+        {"text": "Hamilton, Ontario", "icon": "assets/icons/location.svg"},
+        {"text": "December 2016 - June 2017", "icon": "assets/icons/calendar.svg"},
+        {"text": "JavaScript, Node.js, HTML, CSS, SQL", "icon": "assets/icons/braces.svg"},
+        {"text": "AngularJS, Node.js, Postgres, Restify", "icon": "assets/icons/gear.svg"}
+      ]
+    },
+    {
       "name": "Venture",
       "bullet_points": [
         "Encouraged grade 6-7 students to learn about computers and technology though hands-on investigation",

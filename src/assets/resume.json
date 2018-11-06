@@ -6,9 +6,11 @@
     {"name": "Github", "icon": "assets/icons/github.svg", "text":"github.com/SamCymbaluk", "url": "https://github.com/SamCymbaluk"},
     {"name": "Email", "icon": "assets/icons/email.svg", "text":"samuelcymbaluk@gmail.com", "url": "mailto:samuelcymbaluk@gmail.com"}
   ],
-  "skills": [
-    "Python", "Tensorflow", "Java", "Selenium", "Javascript", "Node.js", "Express", "Restify", "Angular", "Git", "HTML", "CSS", "SQL",
-    "MySQL", "PostgreSQL", "Haskell", "Elm"
+  "languages": [
+    "Python", "Java", "JavaScript", "Node.js", "HTML", "CSS", "SQL", "C", "Haskell", "Elm"
+  ],
+  "frameworks": [
+    "Git", "Tensorflow", "Keras", "Numpy", "OpenCV", "Angular", "Express", "PostgreSQL", "MySql"
   ],
   "work_experience": [
     {
@@ -58,20 +60,6 @@
         {"text": "December 2016 - June 2017", "icon": "assets/icons/calendar.svg"},
         {"text": "JavaScript, Node.js, HTML, CSS, SQL", "icon": "assets/icons/braces.svg"},
         {"text": "AngularJS, Node.js, Postgres, Restify", "icon": "assets/icons/gear.svg"}
-      ]
-    },
-    {
-      "name": "Venture",
-      "bullet_points": [
-        "Encouraged grade 6-7 students to learn about computers and technology though hands-on investigation",
-        "Assisted students in the creation of their own projects using robotics and computer programming",
-        "Taught various classes to students including Intro to Programming with Python"
-      ],
-      "extra_info": [
-        {"text": "McMaster Venture", "icon": "assets/icons/link.svg", "url":"http://venture.mcmaster.ca/"},
-        {"text": "Hamilton, Ontario", "icon": "assets/icons/location.svg"},
-        {"text": "July 2015 - August 2015", "icon": "assets/icons/calendar.svg"},
-        {"text": "Python", "icon": "assets/icons/braces.svg"}
       ]
     }
   ],
@@ -140,16 +128,17 @@
       ]
     },
     {
-      "name": "Citation Practice Web App",
+      "name": "Personal Website",
       "bullet_points": [
-        "Created an Angular web app with REST backend to allow students to practice MLA citations",
-        "Features an administration panel for teachers to see results and statistics about the performance of their students"
+        "Created a personal website in Angular 5 for hosting my resume and other information",
+        "Resume data is read from a JSON configuration file and rendered as a cleanly printable HTML page",
+        "Hosted using Netlify with CI build and deployment triggered on master branch push/merge"
       ],
       "extra_info": [
-        {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/citation-practice-webapp"},
-        {"text": "December 2016 - August 2017", "icon": "assets/icons/calendar.svg"},
-        {"text": "JavaScript, SQL, HTML, CSS", "icon": "assets/icons/braces.svg"},
-        {"text": "Angular, Node.js PostgreSQL, Restify", "icon": "assets/icons/gear.svg"}
+        {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/samcymbaluk"},
+        {"text": "Auguest 2018 - Current", "icon": "assets/icons/calendar.svg"},
+        {"text": "TypeScript, JSON, HTML, CSS", "icon": "assets/icons/braces.svg"},
+        {"text": "Angular, Netlify CI", "icon": "assets/icons/gear.svg"}
       ]
     }
   ],
@@ -180,14 +169,8 @@
         "Honours Computer Science Co-op (B.A.Sc.)"
       ],
       "extra_info": [
-        {"text": "September 2017 - May 2021", "icon": "assets/icons/calendar.svg"}
-      ]
-    },
-    {
-      "name": "Cathedral High School",
-      "bullet_points": [],
-      "extra_info": [
-        {"text": "September 2014 - June 2017", "icon": "assets/icons/calendar.svg"}
+        {"text": "September 2017 - May 2021", "icon": "assets/icons/calendar.svg"},
+        {"text": "GPA: 4.0", "icon": "assets/icons/bullet-list.svg"}
       ]
     }
   ]

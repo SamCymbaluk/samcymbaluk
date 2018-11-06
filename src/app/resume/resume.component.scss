@@ -210,6 +210,19 @@ html body * {
   font-size: 18px;
 }
 
+.half-section {
+  width: 475px;
+  overflow: hidden;
+}
+
+.left-section {
+  float: left;
+}
+
+.right-section {
+  float: right;
+}
+
 .resume-content .section .section-content {
   margin-left: 10px;
 }
@@ -310,6 +323,10 @@ html body * {
   margin-left: 10px;
   width: 100%;
   border-top: 2px solid #5288f9;
+}
+
+.half-section h2:after {
+  width: 65%; // TODO find a dynamic solution
 }
 
 .inner-content li, .right-info div {

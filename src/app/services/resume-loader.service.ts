@@ -23,7 +23,8 @@ export interface Resume {
     text: string,
     url: string
   }[];
-  skills: string[];
+  languages: string[];
+  frameworks: string[];
   work_experience: ResumeSection[];
   community_involvement: ResumeSection[];
   personal_projects: ResumeSection[];

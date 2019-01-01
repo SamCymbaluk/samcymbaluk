@@ -16,16 +16,17 @@
     </div>
     <div class="resume-body">
       <div class="section-wrapper">
-        <div class="section half-section left-section" id="languages-section">
-          <h2>Languages</h2>
+        <div class="section" id="skills-section">
+          <h2>Technical Skills</h2>
           <div class="section-content">
-            <div *ngFor="let lang of resume.languages" class="skill">{{lang}}</div>
-          </div>
-        </div>
-        <div class="section half-section right-section" id="skills-section">
-          <h2>Skills</h2>
-          <div class="section-content">
-            <div *ngFor="let framework of resume.frameworks" class="skill">{{framework}}</div>
+            <div class="section-row">
+              <div class="section-col">
+                <div><div *ngFor="let lang of resume.languages" class="skill">{{lang}}</div></div>
+              </div>
+              <div class="section-col">
+                <div><div *ngFor="let lang of resume.frameworks" class="skill">{{lang}}</div></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="section" id="education-section">

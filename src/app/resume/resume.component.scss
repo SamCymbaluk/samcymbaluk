@@ -210,19 +210,6 @@ html body * {
   font-size: 18px;
 }
 
-.half-section {
-  width: 475px;
-  overflow: hidden;
-}
-
-.left-section {
-  float: left;
-}
-
-.right-section {
-  float: right;
-}
-
 .resume-content .section .section-content {
   margin-left: 10px;
 }
@@ -236,6 +223,15 @@ html body * {
   margin-top:0;
   margin-bottom:0;
   margin-left: 10px;
+}
+
+.section-row {
+  display: flex;
+}
+
+.section-col {
+  padding: 0.5rem;
+  flex: 50%;
 }
 
 .resume-content .section ul li > span {
@@ -323,10 +319,6 @@ html body * {
   margin-left: 10px;
   width: 100%;
   border-top: 2px solid #5288f9;
-}
-
-.half-section h2:after {
-  width: 65%; // TODO find a dynamic solution
 }
 
 .inner-content li, .right-info div {

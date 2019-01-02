@@ -13,6 +13,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import {RouterModule, Routes} from '@angular/router';
+import {HiddenFilterPipe} from './pipes/hidden-filter.pipe';
 
 const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent},
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    ResumeComponent
+    ResumeComponent,
+    HiddenFilterPipe
   ],
   imports: [
     BrowserModule,

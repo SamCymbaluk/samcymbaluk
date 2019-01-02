@@ -361,3 +361,23 @@ html body * {
 .inner-content > p {
   margin-left: 11px;
 }
+
+.button-panel {
+  margin: auto;
+  padding: 0 1rem 3rem;
+  text-align: center;
+  @media print {
+    display: none;
+  }
+}
+
+.button-panel button {
+  margin: 0.5rem;
+}
+
+// Fix for tooltip appearing on print preview
+::ng-deep .mat-tooltip {
+  @media print {
+    display: none;
+  }
+}

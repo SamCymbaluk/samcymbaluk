@@ -14,8 +14,12 @@ export class ResumeComponent implements OnInit {
 
   ngOnInit() {
     this.resumeLoader.getResume().then(resume => {
-        this.resume = resume;
+      this.resume = resume;
     });
+  }
+
+  onPrintClick() {
+    print();
   }
 
 }

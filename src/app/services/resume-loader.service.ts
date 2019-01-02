@@ -23,8 +23,8 @@ export interface Resume {
     text: string,
     url: string
   }[];
-  languages: string[];
-  frameworks: string[];
+  languages: Skill[];
+  frameworks: Skill[];
   work_experience: ResumeSection[];
   community_involvement: ResumeSection[];
   personal_projects: ResumeSection[];
@@ -40,4 +40,10 @@ export interface ResumeSection {
     icon: string,
     url?: string
   }[];
+  hidden: boolean;
+}
+
+export interface Skill {
+  name: string;
+  hidden: boolean;
 }

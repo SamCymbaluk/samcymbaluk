@@ -21,10 +21,10 @@
           <div class="section-content">
             <div class="section-row">
               <div class="section-col">
-                <div><div *ngFor="let lang of resume.languages" class="skill">{{lang}}</div></div>
+                <div><div *ngFor="let lang of resume.languages | hiddenfilter" class="skill">{{lang.name}}</div></div>
               </div>
               <div class="section-col">
-                <div><div *ngFor="let lang of resume.frameworks" class="skill">{{lang}}</div></div>
+                <div><div *ngFor="let lang of resume.frameworks | hiddenfilter" class="skill">{{lang.name}}</div></div>
               </div>
             </div>
           </div>
@@ -138,6 +138,15 @@
       </div>
     </div>
   </div>
+</div>
+
+<div *ngIf="resume" class="button-panel">
+  <button mat-raised-button color="warn" matTooltip="Configure resume content">
+    Configure
+  </button>
+  <button mat-raised-button color="accent" matTooltip="Print or save as PDF" (click)="onPrintClick()">
+    Print
+  </button>
 </div>
 
 <router-outlet></router-outlet>

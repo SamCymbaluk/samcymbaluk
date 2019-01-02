@@ -7,10 +7,27 @@
     {"name": "Email", "icon": "assets/icons/email.svg", "text":"samuelcymbaluk@gmail.com", "url": "mailto:samuelcymbaluk@gmail.com"}
   ],
   "languages": [
-    "Python", "Java", "JavaScript", "Node.js", "HTML", "CSS", "SQL", "C", "Haskell", "Elm"
+    {"name": "Python"},
+    {"name": "Java"},
+    {"name": "JavaScript"},
+    {"name": "Node.js"},
+    {"name": "HTML"},
+    {"name": "CSS"},
+    {"name": "SQL"},
+    {"name": "C"},
+    {"name": "Haskell"},
+    {"name": "Elm"}
   ],
   "frameworks": [
-    "Git", "Tensorflow", "Keras", "Numpy", "OpenCV", "Angular", "Express", "PostgreSQL", "MySql"
+    {"name": "Git"},
+    {"name": "Tensorflow"},
+    {"name": "Keras"},
+    {"name": "Numpy"},
+    {"name": "OpenCV"},
+    {"name": "Angular"},
+    {"name": "Express"},
+    {"name": "PostgreSQL"},
+    {"name": "MySql"}
   ],
   "work_experience": [
     {

@@ -157,17 +157,16 @@
     "name": "Personal Projects",
     "elements": [
       {
-        "name": "Curtis Clicker",
+        "name": "CNN: Neural Networks in C",
         "bullet_points": [
-          "Developed a Computer Science themed \"Cookie Clicker\" web app for a course assignment",
-          "Created in Elm: a functional language that compiles into HTML and JavaScript",
-          "Uses Webpack to build into a static distributable"
+          "Developed a neural network library entirely from the ground up in C",
+          "Implements feed forward neural networks as directed computational graphs of Tensors",
+          "Supports higher order functionality similar to Keras, which allow training on custom datasets in only a few lines of code"
         ],
         "extra_info": [
-          {"text": "Demo", "icon": "assets/icons/link.svg", "url": "http://ugweb.cas.mcmaster.ca/~cymbalus/CurtisClicker/"},
-          {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/CurtisClicker"},
-          {"text": "March 2018", "icon": "assets/icons/calendar.svg"},
-          {"text": "Elm, Javascript, HTML, CSS", "icon": "assets/icons/braces.svg"}
+          {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/CNN"},
+          {"text": "October 2018 - Current", "icon": "assets/icons/calendar.svg"},
+          {"text": "C, Makefile", "icon": "assets/icons/braces.svg"}
         ]
       },
       {
@@ -179,9 +178,23 @@
         ],
         "extra_info": [
           {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/samcymbaluk"},
-          {"text": "Auguest 2018 - Current", "icon": "assets/icons/calendar.svg"},
+          {"text": "August 2018 - Current", "icon": "assets/icons/calendar.svg"},
           {"text": "TypeScript, JSON, HTML, CSS", "icon": "assets/icons/braces.svg"},
           {"text": "Angular, Netlify CI", "icon": "assets/icons/gear.svg"}
+        ]
+      },
+      {
+        "name": "Curtis Clicker",
+        "bullet_points": [
+          "Developed a Computer Science themed \"Cookie Clicker\" web app for a course assignment",
+          "Created in Elm: a functional language that compiles into HTML and JavaScript",
+          "Uses Webpack to build into a static distributable"
+        ],
+        "extra_info": [
+          {"text": "Demo", "icon": "assets/icons/link.svg", "url": "http://ugweb.cas.mcmaster.ca/~cymbalus/CurtisClicker/"},
+          {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/CurtisClicker"},
+          {"text": "March 2018", "icon": "assets/icons/calendar.svg"},
+          {"text": "Elm, Javascript, HTML, CSS", "icon": "assets/icons/braces.svg"}
         ]
       }
     ]

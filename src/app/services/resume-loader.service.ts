@@ -23,16 +23,28 @@ export interface Resume {
     text: string,
     url: string
   }[];
-  languages: Skill[];
-  frameworks: Skill[];
-  work_experience: ResumeSection[];
-  community_involvement: ResumeSection[];
-  personal_projects: ResumeSection[];
-  awards: ResumeSection[];
-  education: ResumeSection[];
+  skills: ResumeSkillsSection;
+  work_experience: ResumeSection;
+  community_involvement: ResumeSection;
+  personal_projects: ResumeSection;
+  awards: ResumeSection;
+  education: ResumeSection;
 }
 
 export interface ResumeSection {
+  name: string;
+  elements: ResumeSectionEntry[];
+  hidden: boolean;
+}
+
+export interface ResumeSkillsSection {
+  name: string;
+  languages: ResumeSkill[];
+  frameworks: ResumeSkill[];
+  hidden: boolean;
+}
+
+export interface ResumeSectionEntry {
   name: string;
   bullet_points: string[];
   extra_info: {
@@ -43,7 +55,7 @@ export interface ResumeSection {
   hidden: boolean;
 }
 
-export interface Skill {
+export interface ResumeSkill {
   name: string;
   hidden: boolean;
 }

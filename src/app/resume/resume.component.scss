@@ -38,6 +38,10 @@ Resume styling
   padding-bottom: 0;
 }
 
+.hidden h2, .hidden h3, .hidden h4, .hidden p, .hidden span, .hidden li {
+  color: darkgray;
+}
+
 .resume-content .section ul {
   padding-left: 20px;
   margin-top:0;
@@ -183,7 +187,7 @@ html body * {
 .resume-content .contact-info {
   margin-left: 2px;
   position: relative;
-  left: 145px;
+  left: 235px; // 145 when using full name
   display: inline-block;
   width: 277px;
 }
@@ -310,6 +314,17 @@ html body * {
   margin: 5px 8px;
   background-color: mat-color($app-primary);
   border-radius: 10px;
+  border: 1px solid mat-color($app-primary);
+}
+
+.hidden .skill {
+  background-color: white;
+  color: darkgray;
+}
+
+.hidden.skill {
+  background-color: white;
+  color: darkgray;
 }
 
 .section h2:after {
@@ -319,6 +334,10 @@ html body * {
   margin-left: 10px;
   width: 100%;
   border-top: 2px solid #5288f9;
+}
+
+.section.hidden h2:after {
+  border-top: 2px solid mat-color($app-primary);
 }
 
 .inner-content li, .right-info div {
@@ -380,4 +399,19 @@ html body * {
   @media print {
     display: none;
   }
+}
+
+.hidden {
+  @media print {
+    display: none;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }

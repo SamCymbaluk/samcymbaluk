@@ -7,7 +7,7 @@
 <div id="navbar_spacing"></div>
 <div *ngIf="resume" id="wrapper">
   <div class="resume-content">
-    <h1>{{resume.name}}</h1>
+    <h1 class="noselect">{{resume.name}}</h1>
     <div class="contact-info">
       <div *ngFor="let item of resume.contact_info">
         <div class="image-container"><img [src]="item.icon" [alt]="item.name" [title]="item.name"/></div>
@@ -16,25 +16,47 @@
     </div>
     <div class="resume-body">
       <div class="section-wrapper">
-        <div class="section" id="skills-section">
-          <h2>Technical Skills</h2>
+        <div class="section" id="skills-section" [class.hidden]="resume.skills.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSkillsSectionClick(resume.skills)">{{resume.skills.name}}</h2>
           <div class="section-content">
             <div class="section-row">
               <div class="section-col">
-                <div><div *ngFor="let lang of resume.languages | hiddenfilter" class="skill">{{lang.name}}</div></div>
+                <div *ngFor="let lang of resume.skills.languages"
+                     class="skill noselect"
+                     [class.hidden]="lang.hidden"
+                     matTooltip="Click to hide from printed PDF"
+                     matTooltipShowDelay="500"
+                     (click)="onSkillClick(lang)">{{lang.name}}</div>
               </div>
               <div class="section-col">
-                <div><div *ngFor="let lang of resume.frameworks | hiddenfilter" class="skill">{{lang.name}}</div></div>
+                <div *ngFor="let fw of resume.skills.frameworks"
+                     class="skill noselect"
+                     [class.hidden]="fw.hidden"
+                     matTooltip="Click to hide from printed PDF"
+                     matTooltipShowDelay="500"
+                     (click)="onSkillClick(fw)">{{fw.name}}</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="section" id="education-section">
-          <h2>Education</h2>
+        <div class="section" id="education-section" [class.hidden]="resume.education.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSectionClick(resume.education)">{{resume.education.name}}</h2>
           <div class="section-content">
-            <div *ngFor="let school of resume.education" class="section-entry compact">
+            <div *ngFor="let school of resume.education.elements" class="section-entry compact" [class.hidden]="school.hidden">
               <div class="section-entry-header">
-                <h4>{{school.name}}</h4>
+                <h4 class="noselect"
+                    matTooltip="Click to hide from printed PDF"
+                    matTooltipShowDelay="500"
+                    matTooltipPosition="left"
+                    (click)="onSectionEntryClick(resume.education, school)">{{school.name}}</h4>
               </div>
               <div class="inner-content">
                 <p *ngFor="let point of school.bullet_points">{{point}}</p>
@@ -49,13 +71,21 @@
             </div>
           </div>
         </div>
-        <div class="section" id="work-section">
-          <h2>Work Experience</h2>
+        <div class="section" id="work-section" [class.hidden]="resume.work_experience.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSectionClick(resume.work_experience)">{{resume.work_experience.name}}</h2>
           <div class="section-content">
-            <div *ngFor="let job of resume.work_experience" class="section-entry">
+            <div *ngFor="let job of resume.work_experience.elements" class="section-entry" [class.hidden]="job.hidden">
               <div>
                 <div class="section-entry-header">
-                  <h3>{{job.name}}</h3><br>
+                  <h4 class="noselect"
+                      matTooltip="Click to hide from printed PDF"
+                      matTooltipShowDelay="500"
+                      matTooltipPosition="left"
+                      (click)="onSectionEntryClick(resume.work_experience, job)">{{job.name}}</h4>
                 </div>
                 <div class="inner-content">
                   <ul><li *ngFor="let point of job.bullet_points">{{point}}</li></ul>
@@ -71,13 +101,21 @@
             </div>
           </div>
         </div>
-        <div class="section" id="community-section">
-          <h2>Community Involvement</h2>
+        <div class="section" id="community-section" [class.hidden]="resume.community_involvement.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSectionClick(resume.community_involvement)">{{resume.community_involvement.name}}</h2>
           <div class="section-content">
-            <div *ngFor="let item of resume.community_involvement" class="section-entry">
+            <div *ngFor="let item of resume.community_involvement.elements" class="section-entry" [class.hidden]="item.hidden">
               <div>
                 <div class="section-entry-header">
-                  <h3>{{item.name}}</h3>
+                  <h4 class="noselect"
+                      matTooltip="Click to hide from printed PDF"
+                      matTooltipShowDelay="500"
+                      matTooltipPosition="left"
+                      (click)="onSectionEntryClick(resume.community_involvement, item)">{{item.name}}</h4>
                 </div>
                 <div class="inner-content">
                   <ul><li *ngFor="let point of item.bullet_points">{{point}}</li></ul>
@@ -93,13 +131,18 @@
             </div>
           </div>
         </div>
-        <div class="section" id="projects-section">
-          <h2>Personal Projects</h2>
+        <div class="section" id="projects-section" [class.hidden]="resume.personal_projects.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSectionClick(resume.personal_projects)">{{resume.personal_projects.name}}</h2>
           <div class="section-content">
-            <div *ngFor="let project of resume.personal_projects" class="section-entry">
+            <div *ngFor="let project of resume.personal_projects.elements" class="section-entry" [class.hidden]="project.hidden">
               <div>
                 <div class="section-entry-header">
-                  <h3>{{project.name}}</h3>
+                  <h4 class="noselect"
+                      (click)="onSectionEntryClick(resume.personal_projects, project)">{{project.name}}</h4>
                 </div>
                 <div class="inner-content">
                   <ul><li *ngFor="let point of project.bullet_points">{{point}}</li></ul>
@@ -115,12 +158,17 @@
             </div>
           </div>
         </div>
-        <div class="section" id="awards-section">
-          <h2>Honours and Awards</h2>
+        <div class="section" id="awards-section" [class.hidden]="resume.awards.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSectionClick(resume.awards)">{{resume.awards.name}}</h2>
           <div class="section-content">
-            <div *ngFor="let award of resume.awards" class="section-entry compact">
+            <div *ngFor="let award of resume.awards.elements" class="section-entry compact" [class.hidden]="award.hidden">
               <div class="section-entry-header">
-                <h4>{{award.name}}</h4>
+                <h4 class="noselect"
+                    (click)="onSectionEntryClick(resume.awards, award)">{{award.name}}</h4>
               </div>
               <div class="inner-content">
                 <p *ngFor="let point of award.bullet_points">{{point}}</p>
@@ -141,9 +189,6 @@
 </div>
 
 <div *ngIf="resume" class="button-panel">
-  <button mat-raised-button color="warn" matTooltip="Configure resume content">
-    Configure
-  </button>
   <button mat-raised-button color="accent" matTooltip="Print or save as PDF" (click)="onPrintClick()">
     Print
   </button>

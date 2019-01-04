@@ -11,9 +11,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatIconRegistry} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
-import { ResumeComponent } from './resume/resume.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HiddenFilterPipe} from './pipes/hidden-filter.pipe';
+import {ResumeComponent} from './resume/resume.component';
 
 const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent},
@@ -37,6 +37,8 @@ const appRoutes: Routes = [
     FlexLayoutModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
+  ],
+  entryComponents: [
   ],
   providers: [],
   bootstrap: [AppComponent]

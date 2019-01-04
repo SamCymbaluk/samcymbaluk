@@ -142,6 +142,9 @@
               <div>
                 <div class="section-entry-header">
                   <h4 class="noselect"
+                      matTooltip="Click to hide from printed PDF"
+                      matTooltipShowDelay="500"
+                      matTooltipPosition="left"
                       (click)="onSectionEntryClick(resume.personal_projects, project)">{{project.name}}</h4>
                 </div>
                 <div class="inner-content">
@@ -168,6 +171,9 @@
             <div *ngFor="let award of resume.awards.elements" class="section-entry compact" [class.hidden]="award.hidden">
               <div class="section-entry-header">
                 <h4 class="noselect"
+                    matTooltip="Click to hide from printed PDF"
+                    matTooltipShowDelay="500"
+                    matTooltipPosition="left"
                     (click)="onSectionEntryClick(resume.awards, award)">{{award.name}}</h4>
               </div>
               <div class="inner-content">

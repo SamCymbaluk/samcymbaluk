@@ -46,6 +46,7 @@ export interface ResumeSkillsSection {
 
 export interface ResumeSectionEntry {
   name: string;
+  title?: string;
   bullet_points: string[];
   extra_info: {
     text: string,

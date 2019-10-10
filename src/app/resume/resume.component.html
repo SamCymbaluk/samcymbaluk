@@ -86,12 +86,44 @@
                       matTooltipShowDelay="500"
                       matTooltipPosition="left"
                       (click)="onSectionEntryClick(resume.work_experience, job)">{{job.name}}</h4>
+                  <h5 class="noselect" *ngIf="job.title">{{job.title}}</h5>
                 </div>
                 <div class="inner-content">
                   <ul><li *ngFor="let point of job.bullet_points">{{point}}</li></ul>
                 </div>
                 <div class="right-info">
                   <div *ngFor="let info of job.extra_info">
+                    <div class="image-container"><img [src]="info.icon"/></div>
+                    <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
+                    <span *ngIf="!info.url">{{info.text}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="section" id="projects-section" [class.hidden]="resume.personal_projects.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSectionClick(resume.personal_projects)">{{resume.personal_projects.name}}</h2>
+          <div class="section-content">
+            <div *ngFor="let project of resume.personal_projects.elements" class="section-entry" [class.hidden]="project.hidden">
+              <div>
+                <div class="section-entry-header">
+                  <h4 class="noselect"
+                      matTooltip="Click to hide from printed PDF"
+                      matTooltipShowDelay="500"
+                      matTooltipPosition="left"
+                      (click)="onSectionEntryClick(resume.personal_projects, project)">{{project.name}}</h4>
+                </div>
+                <div class="inner-content">
+                  <ul><li *ngFor="let point of project.bullet_points">{{point}}</li></ul>
+                </div>
+                <div class="right-info">
+                  <div *ngFor="let info of project.extra_info">
                     <div class="image-container"><img [src]="info.icon"/></div>
                     <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
                     <span *ngIf="!info.url">{{info.text}}</span>
@@ -116,42 +148,13 @@
                       matTooltipShowDelay="500"
                       matTooltipPosition="left"
                       (click)="onSectionEntryClick(resume.community_involvement, item)">{{item.name}}</h4>
+                  <h5 class="noselect" *ngIf="item.title">{{item.title}}</h5>
                 </div>
                 <div class="inner-content">
                   <ul><li *ngFor="let point of item.bullet_points">{{point}}</li></ul>
                 </div>
                 <div class="right-info">
                   <div *ngFor="let info of item.extra_info">
-                    <div class="image-container"><img [src]="info.icon"/></div>
-                    <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
-                    <span *ngIf="!info.url">{{info.text}}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section" id="projects-section" [class.hidden]="resume.personal_projects.hidden">
-          <h2 class="noselect"
-              matTooltip="Click to hide from printed PDF"
-              matTooltipShowDelay="500"
-              matTooltipPosition="left"
-              (click)="onSectionClick(resume.personal_projects)">{{resume.personal_projects.name}}</h2>
-          <div class="section-content">
-            <div *ngFor="let project of resume.personal_projects.elements" class="section-entry" [class.hidden]="project.hidden">
-              <div>
-                <div class="section-entry-header">
-                  <h4 class="noselect"
-                      matTooltip="Click to hide from printed PDF"
-                      matTooltipShowDelay="500"
-                      matTooltipPosition="left"
-                      (click)="onSectionEntryClick(resume.personal_projects, project)">{{project.name}}</h4>
-                </div>
-                <div class="inner-content">
-                  <ul><li *ngFor="let point of project.bullet_points">{{point}}</li></ul>
-                </div>
-                <div class="right-info">
-                  <div *ngFor="let info of project.extra_info">
                     <div class="image-container"><img [src]="info.icon"/></div>
                     <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
                     <span *ngIf="!info.url">{{info.text}}</span>

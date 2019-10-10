@@ -13,6 +13,10 @@ app-footer {
   }
 }
 
+body {
+  -webkit-print-color-adjust: exact;
+}
+
 .loading {
   width: 100vw;
   height: 100vh;
@@ -81,6 +85,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
   margin: 0;
   padding: 0;
@@ -95,6 +100,10 @@ h4 {
 
 h1.title {
   text-align: center;
+}
+
+h5 {
+  padding-left: 5px;
 }
 
 #navbar_spacing {
@@ -187,7 +196,7 @@ html body * {
 .resume-content .contact-info {
   margin-left: 2px;
   position: relative;
-  left: 235px; // 145 when using full name
+  left: 262px;
   display: inline-block;
   width: 277px;
 }
@@ -251,7 +260,7 @@ html body * {
 }
 
 .resume-content .section-entry .inner-content {
-  width: 600px;
+  width: 660px;
   display: inline-block;
   margin-left: 4px;
 }
@@ -260,7 +269,7 @@ html body * {
   float: right;
   text-align: left;
   margin-top: 0px;
-  width: 277px;
+  width: 250px;
 }
 
 .resume-content .section-entry.compact .right-info {
@@ -285,7 +294,7 @@ html body * {
 }
 
 .resume-content .section-entry-header > * {
-  display: inline-block;
+  display: flex;
   margin-left: 10px;
 }
 

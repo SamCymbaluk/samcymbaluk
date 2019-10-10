@@ -13,10 +13,11 @@
       {"name": "Java"},
       {"name": "JavaScript"},
       {"name": "Node.js"},
+      {"name": "TypeScript"},
+      {"name": "C/C++"},
       {"name": "HTML"},
       {"name": "CSS"},
       {"name": "SQL"},
-      {"name": "C"},
       {"name": "Haskell"},
       {"name": "Elm"}
     ],
@@ -29,7 +30,8 @@
       {"name": "Angular"},
       {"name": "Express"},
       {"name": "PostgreSQL"},
-      {"name": "MySql"}
+      {"name": "MySql"},
+      {"name": "gRPC"}
     ]
   },
   "education": {
@@ -41,8 +43,8 @@
           "Honours Computer Science Co-op (B.A.Sc.)"
         ],
         "extra_info": [
-          {"text": "September 2017 - May 2021", "icon": "assets/icons/calendar.svg"},
-          {"text": "GPA: 4.0", "icon": "assets/icons/bullet-list.svg"}
+          {"text": "September 2017 - April 2021", "icon": "assets/icons/calendar.svg"},
+          {"text": "GPA: 4.0/4.0", "icon": "assets/icons/bullet-list.svg"}
         ]
       }
     ]
@@ -51,52 +53,69 @@
     "name": "Work Experience",
     "elements": [
       {
-        "name": "Caliber Communications",
+        "name": "Google",
+        "title": "Engineering Practicum Intern",
         "bullet_points": [
-          "Worked independently to create a number of tools and applications that lay the groundwork for real-time object detection on video streams at a large scale",
-          "Developed a command line tool in Python for training and benchmarking neural networks defined in Tensorflow",
-          "Created an Angular Web App for labelling objects within an image, and trained a team on the correct procedure for producing clean data",
-          "Wrote a REST API in Node.js to manage image datasets; labeling and verification of new images; and weights files, training, and benchmarks for neural network architectures",
-          "Designed and implemented an inference node as a scalable docker container that uses gRPC and a multiprocessing pipeline to handle inference requests"
+          "Co-authored a technically detailed project design document to propose Charcoal: a Python gRPC service and a C++/Angular frontend for generating changelogs used for diagnosing failures in large continuous builds.",
+          "Developed and deployed Charcoal, and measured a 75% reduction in median changelog generation time over existing tools.",
+          "Created and deployed a Python command line tool wrapping the Charcoal RPC service to provide a backup in the event of frontend failures."
+        ],
+        "extra_info": [
+          {"text": "Google - Engineering Practicum", "icon": "assets/icons/link.svg", "url":"https://careers.google.com/jobs/results/5688825462194176-engineering-practicum-intern-summer-2019/"},
+          {"text": "Waterloo, Ontario", "icon": "assets/icons/location.svg"},
+          {"text": "May 2019 - August 2019", "icon": "assets/icons/calendar.svg"},
+          {"text": "Python, TypeScript, C++, GCL", "icon": "assets/icons/braces.svg"},
+          {"text": "gRPC, Angular, Bazel", "icon": "assets/icons/gear.svg"}
+        ]
+      },
+      {
+        "name": "Caliber Communications",
+        "title": "Jr. Software Developer",
+        "bullet_points": [
+          "Worked independently to create the tools and applications that laid the groundwork for real-time object detection on hundreds on video streams in real time.",
+          "Developed a tool in Python for training and benchmarking neural networks defined in Tensorflow.",
+          "Created an Angular Web App for labelling objects in images and managing a large image dataset.",
+          "Wrote a REST API in Node.js to manage image datasets; and the training, storage, and benchmarks for neural network architectures.",
+          "Designed and implemented a horizontally scalable inference node that uses gRPC and a multiprocessing pipeline to handle inference requests."
         ],
         "extra_info": [
           {"text": "Caliber Communications", "icon": "assets/icons/link.svg", "url":"https://calibercommunications.ca/"},
           {"text": "Hamilton, Ontario", "icon": "assets/icons/location.svg"},
           {"text": "April 2018 - August 2018", "icon": "assets/icons/calendar.svg"},
           {"text": "Python, Node.js, TypeScript, SQL", "icon": "assets/icons/braces.svg"},
-          {"text": "Tensorflow, Keras, Numpy, OpenCV, Express, Angular, PostgreSQL", "icon": "assets/icons/gear.svg"}
+          {"text": "Tensorflow, Keras, Numpy, OpenCV, Express, Angular, PostgreSQL, gRPC", "icon": "assets/icons/gear.svg"}
         ]
       },
       {
         "name": "Weever Apps",
+        "title": "QA Automation Developer",
         "bullet_points": [
-          "Worked along side the QA manager to ensure the stability and functionality of Weever Apps' products",
-          "Developed scripts and SQL queries to reduce the manual work required to deploy certain native apps by over 80%",
-          "Developed an automated testing suite in JavaScript using Selenium to meet a critical need for better frontend test coverage",
-          "Stood in as QA manager in the absence of the regular manager. During this time, held many extra responsibilities including being responsible for giving the final go-ahead on code pushes, and working with developers and project management to ensure deadlines were met"
+          "Worked with the QA manager to ensure the stability and functionality of Weever Apps' products.",
+          "Developed Bash scripts and SQL queries that reduced time to deploy native apps by over 80%.",
+          "Designed and developed an automated testing suite in JavaScript using Mocha and Selenium.",
+          "Stood in as QA manager in the absence of the regular manager, taking on the responsibilities of giving the final go-ahead on production code pushes, and working with developers and project managers to ensure deadlines were met."
         ],
         "extra_info": [
           {"text": "Weever Apps", "icon": "assets/icons/link.svg", "url":"https://weeverapps.com/"},
           {"text": "Hamilton, Ontario", "icon": "assets/icons/location.svg"},
           {"text": "August 2016 - September 2017", "icon": "assets/icons/calendar.svg"},
-          {"text": "JavaScript HTML, CSS, SQL", "icon": "assets/icons/braces.svg"},
+          {"text": "JavaScript HTML, CSS, SQL, Bash", "icon": "assets/icons/braces.svg"},
           {"text": "AngularJS, Node.js, Selenium, jQuery", "icon": "assets/icons/gear.svg"}
         ]
       },
       {
         "name": "Cathedral High School",
+        "title": "Freelance Web Developer",
         "bullet_points": [
-          "Developed the prototype for a web app to gamify the creation of MLA and APA style citations as part of my grade 12 computer science course",
-          "Upon completion of the course, was hired part time by Cathedral's teacher-librarian to continue building the concept into a usable product",
-          "The app supports an admin panel which enables administrators to modify quiz content and allows teachers to view submissions from students in their class"
+          "Worked part-time with Cathedral's teacher-librarian to develop a web app to gamify the creation of MLA and APA style citations for use in a classroom setting.",
+          "Supports an admin panel which enables administrators to modify quiz content and allows teachers to view submissions from students in their class."
         ],
         "extra_info": [
-          {"text": "Cathedral High School", "icon": "assets/icons/link.svg", "url":"https://chs.hwcdsb.ca/"},
           {"text": "Github Project", "icon": "assets/icons/github.svg", "url":"https://github.com/SamCymbaluk/citation-practice-webapp"},
           {"text": "Hamilton, Ontario", "icon": "assets/icons/location.svg"},
           {"text": "December 2016 - June 2017", "icon": "assets/icons/calendar.svg"},
           {"text": "JavaScript, Node.js, HTML, CSS, SQL", "icon": "assets/icons/braces.svg"},
-          {"text": "AngularJS, Node.js, Postgres, Restify", "icon": "assets/icons/gear.svg"}
+          {"text": "AngularJS, Postgres, Restify", "icon": "assets/icons/gear.svg"}
         ]
       }
     ]
@@ -105,23 +124,35 @@
     "name": "Community Involvement",
     "elements": [
       {
-        "name": "McMaster CS Society",
+        "name": "McMaster Computer Science Society",
+        "title": "President",
         "bullet_points": [
-          "Volunteers as the Vice President - Academic for the Computer Science Society",
-          "Acts as a intermediary between Computer Science students and faculty",
-          "Heads an academic committee that works to enact initiatives pertaining to curriculum and academic student life",
-          "Runs academic events such as interview prep, midterm/exam study, and industry networking nights"
+          "Ensures the integrity of the McMaster CS Society as an organization focused on the betterment of the Computer Science program and community at McMaster.",
+          "Oversees the organization of small scale academic and social events (20-30 people), as well as larger Industry events (100-200 people).",
+          "Served as the McMaster Computer Science Curriculum Committee Student Representative to help design a new curriculum to best fit the needs of undergraduate students in Computer Science.",
+          "Previously volunteered as Vice President Academic and First Year Representative."
         ],
         "extra_info": [
-          {"text": "CS Society", "icon": "assets/icons/link.svg", "url": "http://mcss.mcmaster.ca/"},
-          {"text": "October 2017 - Current", "icon": "assets/icons/calendar.svg"}
+          {"text": "McMaster CS Society", "icon": "assets/icons/link.svg", "url": "https://www.msumcmaster.ca/clubs-directory/1004-mcmaster-computer-science-society/"},
+          {"text": "October 2017 - Present", "icon": "assets/icons/calendar.svg"}
+        ]
+      },
+      {
+        "name": "McMaster Engineering Representative",
+        "bullet_points": [
+          "Volunteers as a Engineering Representative during Welcome Week and at outreach and community building events throughout the year.",
+          "Currently organizing a number of tech-focused events for the 2019 Welcome Week to help foster inclusion by diversifying the types of events available to incoming students."
+        ],
+        "extra_info": [
+          {"text": "McMaster Engineering", "icon": "assets/icons/link.svg", "url": "https://www.eng.mcmaster.ca/"},
+          {"text": "May 2019 - Present", "icon": "assets/icons/calendar.svg"}
         ]
       },
       {
         "name": "HamOnt JS",
         "bullet_points": [
-          "Gave a talk detailing my experience developing a JavaScript based automated testing suite for Weever Apps",
-          "Discussed the merits of various frameworks and design patterns that can be used for automated testing in JavaScript"
+          "Gave a talk detailing my experience developing a JavaScript based automated testing suite for Weever Apps.",
+          "Discussed the merits of various frameworks and design patterns that can be used for automated testing in JavaScript."
         ],
         "extra_info": [
           {"text": "HamOnt JS 2017", "icon": "assets/icons/link.svg", "url": "http://innovationfactory.ca/event/hamont-js-javascript-2017/"},
@@ -132,8 +163,8 @@
       {
         "name": "St. Patrick's Robotics Club",
         "bullet_points": [
-          "Volunteered at a local elementary school as a leader/mentor to an all-girls robotics team",
-          "Helped give students an understanding of programming through hands-on problem solving with LEGO Robotics"
+          "Volunteered at a local elementary school as a leader/mentor to an all-girls robotics team.",
+          "Helped give students an understanding of programming through hands-on problem solving with LEGO Robotics."
         ],
         "extra_info": [
           {"text": "September 2016 - December 2016", "icon": "assets/icons/calendar.svg"}
@@ -142,8 +173,8 @@
       {
         "name": "Hacking Health Hamilton",
         "bullet_points": [
-          "Attended the two-day Hacking Health Hamilton conference and worked with a team to develop a prototype of our solution to medication regimen compliance issues: MedKit",
-          "Won people's choice award for our prototype and presentation"
+          "Attended the two-day Hacking Health Hamilton conference and worked with a team to develop a prototype of our solution to medication regimen compliance issues: MedKit.",
+          "Won people's choice award for our prototype and presentation."
         ],
         "extra_info": [
           {"text": "Hacking Health", "icon": "assets/icons/link.svg", "url": "http://hacking-health.org/"},
@@ -159,26 +190,52 @@
       {
         "name": "CNN: Neural Networks in C",
         "bullet_points": [
-          "Developed a neural network library entirely from the ground up in C",
-          "Implements feed forward neural networks as directed computational graphs of Tensors",
-          "Supports higher order functionality similar to Keras, which allow training on custom datasets in only a few lines of code"
+          "Developed a neural network library entirely from the ground up in C.",
+          "Implements feed forward neural networks as directed computational graphs of Tensors.",
+          "Supports higher order functionality similar to Keras, which allow training on custom datasets in only a few lines of code."
         ],
         "extra_info": [
           {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/CNN"},
-          {"text": "October 2018 - Current", "icon": "assets/icons/calendar.svg"},
+          {"text": "October 2018 - Present", "icon": "assets/icons/calendar.svg"},
           {"text": "C, Makefile", "icon": "assets/icons/braces.svg"}
+        ]
+      },
+      {
+        "name": "Face Aging with Conditional Generative Adversarial Networks",
+        "bullet_points": [
+          "Researched and implemented an algorithm proposed by Antipov et al. for artificial facial aging using an Age Conditional Generative Adversarial Network.",
+          "Worked with a group of 4 students to develop the training and inference infrastructure in GCP using Flask and Postgres."
+        ],
+        "extra_info": [
+          {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/jessica-dl/2XB3-ML-Training"},
+          {"text": "October 2018 - April 2019", "icon": "assets/icons/calendar.svg"},
+          {"text": "Python, SQL", "icon": "assets/icons/braces.svg"},
+          {"text": "Tensorflow, GCP, Flask, Postgres", "icon": "assets/icons/gear.svg"}
+        ]
+      },
+      {
+        "name": "Proximity",
+        "bullet_points": [
+          "Worked with a team of 3 at YHack to develop an application that helps reduce overcrowding on campus by enabling users to view how busy certain areas are.",
+          "Developed an Express REST API that collates the device info periodically gathered by the Raspberry Pis and provides anonymized activity data to the Angular frontend."
+        ],
+        "extra_info": [
+          {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/Node-dot-jjs"},
+          {"text": "December 2018", "icon": "assets/icons/calendar.svg"},
+          {"text": "Python, Bash, TypeScript, Node.js", "icon": "assets/icons/braces.svg"},
+          {"text": "Kali Linux, Aircrack-ng, Express, Angular, Postgres", "icon": "assets/icons/gear.svg"}
         ]
       },
       {
         "name": "Personal Website",
         "bullet_points": [
-          "Created a personal website in Angular 5 for hosting my resume and other information",
-          "Resume data is read from a JSON configuration file and rendered as a cleanly printable HTML page",
-          "Hosted using Netlify with CI build and deployment triggered on master branch push/merge"
+          "Created a personal website in Angular 6 for hosting my resume and other information.",
+          "Resume data is read from a JSON configuration file and rendered as a cleanly printable HTML page.",
+          "Hosted using Netlify with CI build and deployment triggered on master branch push/merge."
         ],
         "extra_info": [
           {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/samcymbaluk"},
-          {"text": "August 2018 - Current", "icon": "assets/icons/calendar.svg"},
+          {"text": "August 2018 - Present", "icon": "assets/icons/calendar.svg"},
           {"text": "TypeScript, JSON, HTML, CSS", "icon": "assets/icons/braces.svg"},
           {"text": "Angular, Netlify CI", "icon": "assets/icons/gear.svg"}
         ]
@@ -186,12 +243,11 @@
       {
         "name": "Curtis Clicker",
         "bullet_points": [
-          "Developed a Computer Science themed \"Cookie Clicker\" web app for a course assignment",
-          "Created in Elm: a functional language that compiles into HTML and JavaScript",
-          "Uses Webpack to build into a static distributable"
+          "Developed a Computer Science themed \"Cookie Clicker\" web app for a course assignment.",
+          "Created in Elm: a functional language that compiles into HTML and JavaScript.",
+          "Uses Webpack to build into a static distributable."
         ],
         "extra_info": [
-          {"text": "Demo", "icon": "assets/icons/link.svg", "url": "http://ugweb.cas.mcmaster.ca/~cymbalus/CurtisClicker/"},
           {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/CurtisClicker"},
           {"text": "March 2018", "icon": "assets/icons/calendar.svg"},
           {"text": "Elm, Javascript, HTML, CSS", "icon": "assets/icons/braces.svg"}
@@ -203,9 +259,27 @@
     "name": "Honours and Awards",
     "elements": [
       {
+        "name": "The Class Of '44 Scholarship",
+        "bullet_points": [
+          "Awarded to the student who achieved the highest Fall-Winter Average of their program."
+        ],
+        "extra_info": [
+          {"text": "May 2019", "icon": "assets/icons/calendar.svg"}
+        ]
+      },
+      {
+        "name": "Provost's Honour Roll",
+        "bullet_points": [
+          "Awarded to students who achieve a perfect GPA over a full school year."
+        ],
+        "extra_info": [
+          {"text": "May 2019", "icon": "assets/icons/calendar.svg"}
+        ]
+      },
+      {
         "name": "The Pollock Family Academic Grant",
         "bullet_points": [
-          "Awarded to a student in the Faculty of Engineering who has completed Level 1, attained a high Fall-Winter Average and demonstrates financial need"
+          "Awarded to a student in the Faculty of Engineering who has completed Level 1, attained a high Fall-Winter Average and demonstrates financial need."
         ],
         "extra_info": [
           {"text": "December 2018", "icon": "assets/icons/calendar.svg"}
@@ -214,7 +288,7 @@
       {
         "name": "Nikola Tesla Educational Corporation Scholarship",
         "bullet_points": [
-          "Awarded to a student who graduated from a high school in the City of Hamilton, has completed Level 1 Engineering with a high average, and who demonstrates a commitment to continuing in a field of study that is directly related to Nikola Tesla’s work and body of knowledge"
+          "Awarded to a student who graduated from a high school in the City of Hamilton, has completed Level 1 Engineering with a high average, and who demonstrates a commitment to continuing in a field of study that is directly related to Nikola Tesla’s work and body of knowledge."
         ],
         "extra_info": [
           {"text": "July 2018", "icon": "assets/icons/calendar.svg"}
@@ -223,7 +297,7 @@
       {
         "name": "McMaster President's Award",
         "bullet_points": [
-          "Awarded to incoming students who have achieved admission averages of 95%+"
+          "Awarded to incoming students who have achieved admission averages of 95%+."
         ],
         "extra_info": [
           {"text": "September 2017", "icon": "assets/icons/calendar.svg"}

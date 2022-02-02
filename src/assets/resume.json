@@ -11,6 +11,7 @@
     "languages": [
       {"name": "Python"},
       {"name": "Java"},
+      {"name": "Golang"},
       {"name": "JavaScript"},
       {"name": "Node.js"},
       {"name": "TypeScript"},
@@ -23,12 +24,12 @@
     ],
     "frameworks": [
       {"name": "Git"},
+      {"name": "LND"},
       {"name": "Tensorflow"},
       {"name": "Keras"},
       {"name": "Numpy"},
       {"name": "OpenCV"},
       {"name": "Angular"},
-      {"name": "Express"},
       {"name": "PostgreSQL"},
       {"name": "MySql"},
       {"name": "gRPC"}
@@ -44,7 +45,7 @@
         ],
         "extra_info": [
           {"text": "September 2017 - April 2021", "icon": "assets/icons/calendar.svg"},
-          {"text": "GPA: 4.0/4.0", "icon": "assets/icons/bullet-list.svg"}
+          {"text": "GPA: 3.9/4.0", "icon": "assets/icons/bullet-list.svg"}
         ]
       }
     ]
@@ -54,18 +55,34 @@
     "elements": [
       {
         "name": "Google",
-        "title": "Engineering Practicum Intern",
+        "title": "Site Reliability Engineer Intern",
+        "bullet_points": [
+          "Developed automation in Python which reduced manual work requirement by 85% when deploying Stadia stack to new data centers.",
+          "Proposed and implemented a novel solution that uses topological sort and node-level diffs to synchronize documentation with DAGs and applied it to the Stadia deployment automation docs.",
+          "Wrote 3 technically detailed design documentations, outlining a technical proposal, justifying its advantage over other alternatives."
+        ],
+        "extra_info": [
+          {"text": "Google", "icon": "assets/icons/link.svg", "url":"https://careers.google.com/students/"},
+          {"text": "Sunnyvale, California*", "icon": "assets/icons/location.svg"},
+          {"text": "May 2020 - August 2020", "icon": "assets/icons/calendar.svg"},
+          {"text": "Python, Go, YAML", "icon": "assets/icons/braces.svg"},
+          {"text": "Moveit, Borgmon, Rapid", "icon": "assets/icons/gear.svg"}
+        ]
+      },
+      {
+        "name": "Google",
+        "title": "Software Engineering Intern",
         "bullet_points": [
           "Co-authored a technically detailed project design document to propose Charcoal: a Python gRPC service and a C++/Angular frontend for generating changelogs used for diagnosing failures in large continuous builds.",
           "Developed and deployed Charcoal, and measured a 75% reduction in median changelog generation time over existing tools.",
           "Created and deployed a Python command line tool wrapping the Charcoal RPC service to provide a backup in the event of frontend failures."
         ],
         "extra_info": [
-          {"text": "Google - Engineering Practicum", "icon": "assets/icons/link.svg", "url":"https://careers.google.com/jobs/results/5688825462194176-engineering-practicum-intern-summer-2019/"},
+          {"text": "Google", "icon": "assets/icons/link.svg", "url":"https://careers.google.com/students/"},
           {"text": "Waterloo, Ontario", "icon": "assets/icons/location.svg"},
           {"text": "May 2019 - August 2019", "icon": "assets/icons/calendar.svg"},
           {"text": "Python, TypeScript, C++, GCL", "icon": "assets/icons/braces.svg"},
-          {"text": "gRPC, Angular, Bazel", "icon": "assets/icons/gear.svg"}
+          {"text": "gRPC, Angular, Bazel, unittest.mock", "icon": "assets/icons/gear.svg"}
         ]
       },
       {
@@ -127,21 +144,21 @@
         "name": "McMaster Computer Science Society",
         "title": "President",
         "bullet_points": [
-          "Ensures the integrity of the McMaster CS Society as an organization focused on the betterment of the Computer Science program and community at McMaster.",
-          "Oversees the organization of small scale academic and social events (20-30 people), as well as larger Industry events (100-200 people).",
+          "Ensured the integrity of the McMaster CS Society as an organization focused on the betterment of the Computer Science program and community at McMaster.",
+          "Oversaw the organization of small scale academic and social events (20-30 people), as well as larger Industry events (100-200 people).",
           "Served as the McMaster Computer Science Curriculum Committee Student Representative to help design a new curriculum to best fit the needs of undergraduate students in Computer Science.",
           "Previously volunteered as Vice President Academic and First Year Representative."
         ],
         "extra_info": [
-          {"text": "McMaster CS Society", "icon": "assets/icons/link.svg", "url": "https://www.msumcmaster.ca/clubs-directory/1004-mcmaster-computer-science-society/"},
-          {"text": "October 2017 - Present", "icon": "assets/icons/calendar.svg"}
+          {"text": "McMaster CS Society", "icon": "assets/icons/link.svg", "url": "https://mcmastercs.ca/"},
+          {"text": "October 2017 - April 2020", "icon": "assets/icons/calendar.svg"}
         ]
       },
       {
         "name": "McMaster Engineering Representative",
         "bullet_points": [
           "Volunteers as a Engineering Representative during Welcome Week and at outreach and community building events throughout the year.",
-          "Currently organizing a number of tech-focused events for the 2019 Welcome Week to help foster inclusion by diversifying the types of events available to incoming students."
+          "Organized of tech-focused events for the 2019 Welcome Week to help foster inclusion by diversifying the types of events available to incoming students."
         ],
         "extra_info": [
           {"text": "McMaster Engineering", "icon": "assets/icons/link.svg", "url": "https://www.eng.mcmaster.ca/"},

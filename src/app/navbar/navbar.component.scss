@@ -16,8 +16,8 @@
   flex: 1 1 auto;
 }
 
-mat-toolbar {
-  height: 3rem;
+mat-toolbar.header {
+  height: 48px;
   position: fixed;
   top: 0.3rem;
   width: 100%;

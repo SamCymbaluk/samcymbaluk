@@ -4,16 +4,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MaterialModule} from './material.app';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {MatIconRegistry} from '@angular/material';
+import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
 import {HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HiddenFilterPipe} from './pipes/hidden-filter.pipe';
 import {ResumeComponent} from './resume/resume.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 
 const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent},
@@ -33,9 +34,11 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
     FlexLayoutModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
     RouterModule.forRoot(appRoutes)
   ],
   entryComponents: [

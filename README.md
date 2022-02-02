@@ -1,6 +1,6 @@
 # Sam Cymbaluk Website
 
-This is the code for my [personal site](https://samcymbaluk.com) developed in [Angular 6](https://angular.io/).
+This is the code for my [personal site](https://samcymbaluk.com) developed in [Angular 11](https://angular.io/).
 
 ## Development server
 

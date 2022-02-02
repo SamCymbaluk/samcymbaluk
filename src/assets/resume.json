@@ -25,11 +25,13 @@
     "frameworks": [
       {"name": "Git"},
       {"name": "LND"},
+      {"name": "Kubernetes"},
       {"name": "Tensorflow"},
       {"name": "Keras"},
       {"name": "Numpy"},
       {"name": "OpenCV"},
       {"name": "Angular"},
+      {"name": "Express"},
       {"name": "PostgreSQL"},
       {"name": "MySql"},
       {"name": "gRPC"}
@@ -44,7 +46,7 @@
           "Honours Computer Science Co-op (B.A.Sc.)"
         ],
         "extra_info": [
-          {"text": "September 2017 - April 2021", "icon": "assets/icons/calendar.svg"},
+          {"text": "April 2021", "icon": "assets/icons/calendar.svg"},
           {"text": "GPA: 3.9/4.0", "icon": "assets/icons/bullet-list.svg"}
         ]
       }
@@ -53,6 +55,21 @@
   "work_experience": {
     "name": "Work Experience",
     "elements": [
+      {
+        "name": "Google",
+        "title": "Software Engineer",
+        "bullet_points": [
+          "Developed full-stack features for Google Web Search",
+          "Worked cross-team with UX, product managers, and other stakeholders to ensure delivered features met specifications and compliance standards.",
+          "Performed detailed A/B testing and test analysis to provide justification for launching features."
+        ],
+        "extra_info": [
+          {"text": "Google", "icon": "assets/icons/link.svg", "url":"https://careers.google.com/"},
+          {"text": "Pittsburgh, Pennsylvania", "icon": "assets/icons/location.svg"},
+          {"text": "August 2021 - Present", "icon": "assets/icons/calendar.svg"},
+          {"text": "Java, JavaScript, C++, HTML, CSS", "icon": "assets/icons/braces.svg"}
+        ]
+      },
       {
         "name": "Google",
         "title": "Site Reliability Engineer Intern",
@@ -98,7 +115,7 @@
         "extra_info": [
           {"text": "Caliber Communications", "icon": "assets/icons/link.svg", "url":"https://calibercommunications.ca/"},
           {"text": "Hamilton, Ontario", "icon": "assets/icons/location.svg"},
-          {"text": "April 2018 - August 2018", "icon": "assets/icons/calendar.svg"},
+          {"text": "April 2018 - April 2021", "icon": "assets/icons/calendar.svg"},
           {"text": "Python, Node.js, TypeScript, SQL", "icon": "assets/icons/braces.svg"},
           {"text": "Tensorflow, Keras, Numpy, OpenCV, Express, Angular, PostgreSQL, gRPC", "icon": "assets/icons/gear.svg"}
         ]
@@ -118,21 +135,6 @@
           {"text": "August 2016 - September 2017", "icon": "assets/icons/calendar.svg"},
           {"text": "JavaScript HTML, CSS, SQL, Bash", "icon": "assets/icons/braces.svg"},
           {"text": "AngularJS, Node.js, Selenium, jQuery", "icon": "assets/icons/gear.svg"}
-        ]
-      },
-      {
-        "name": "Cathedral High School",
-        "title": "Freelance Web Developer",
-        "bullet_points": [
-          "Worked part-time with Cathedral's teacher-librarian to develop a web app to gamify the creation of MLA and APA style citations for use in a classroom setting.",
-          "Supports an admin panel which enables administrators to modify quiz content and allows teachers to view submissions from students in their class."
-        ],
-        "extra_info": [
-          {"text": "Github Project", "icon": "assets/icons/github.svg", "url":"https://github.com/SamCymbaluk/citation-practice-webapp"},
-          {"text": "Hamilton, Ontario", "icon": "assets/icons/location.svg"},
-          {"text": "December 2016 - June 2017", "icon": "assets/icons/calendar.svg"},
-          {"text": "JavaScript, Node.js, HTML, CSS, SQL", "icon": "assets/icons/braces.svg"},
-          {"text": "AngularJS, Postgres, Restify", "icon": "assets/icons/gear.svg"}
         ]
       }
     ]
@@ -213,7 +215,7 @@
         ],
         "extra_info": [
           {"text": "Github Project", "icon": "assets/icons/github.svg", "url": "https://github.com/SamCymbaluk/CNN"},
-          {"text": "October 2018 - Present", "icon": "assets/icons/calendar.svg"},
+          {"text": "December 2018", "icon": "assets/icons/calendar.svg"},
           {"text": "C, Makefile", "icon": "assets/icons/braces.svg"}
         ]
       },

@@ -43,34 +43,6 @@
             </div>
           </div>
         </div>
-        <div class="section" id="education-section" [class.hidden]="resume.education.hidden">
-          <h2 class="noselect"
-              matTooltip="Click to hide from printed PDF"
-              matTooltipShowDelay="500"
-              matTooltipPosition="left"
-              (click)="onSectionClick(resume.education)">{{resume.education.name}}</h2>
-          <div class="section-content">
-            <div *ngFor="let school of resume.education.elements" class="section-entry compact" [class.hidden]="school.hidden">
-              <div class="section-entry-header">
-                <h4 class="noselect"
-                    matTooltip="Click to hide from printed PDF"
-                    matTooltipShowDelay="500"
-                    matTooltipPosition="left"
-                    (click)="onSectionEntryClick(resume.education, school)">{{school.name}}</h4>
-              </div>
-              <div class="inner-content">
-                <p *ngFor="let point of school.bullet_points">{{point}}</p>
-              </div>
-              <div class="right-info">
-                <div *ngFor="let info of school.extra_info">
-                  <div class="image-container"><img [src]="info.icon"/></div>
-                  <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
-                  <span *ngIf="!info.url">{{info.text}}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="section" id="work-section" [class.hidden]="resume.work_experience.hidden">
           <h2 class="noselect"
               matTooltip="Click to hide from printed PDF"
@@ -159,6 +131,34 @@
                     <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
                     <span *ngIf="!info.url">{{info.text}}</span>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="education-section" [class.hidden]="resume.education.hidden">
+          <h2 class="noselect"
+              matTooltip="Click to hide from printed PDF"
+              matTooltipShowDelay="500"
+              matTooltipPosition="left"
+              (click)="onSectionClick(resume.education)">{{resume.education.name}}</h2>
+          <div class="section-content">
+            <div *ngFor="let school of resume.education.elements" class="section-entry compact" [class.hidden]="school.hidden">
+              <div class="section-entry-header">
+                <h4 class="noselect"
+                    matTooltip="Click to hide from printed PDF"
+                    matTooltipShowDelay="500"
+                    matTooltipPosition="left"
+                    (click)="onSectionEntryClick(resume.education, school)">{{school.name}}</h4>
+              </div>
+              <div class="inner-content">
+                <p *ngFor="let point of school.bullet_points">{{point}}</p>
+              </div>
+              <div class="right-info">
+                <div *ngFor="let info of school.extra_info">
+                  <div class="image-container"><img [src]="info.icon"/></div>
+                  <a *ngIf="info.url" [href]="info.url">{{info.text}}</a>
+                  <span *ngIf="!info.url">{{info.text}}</span>
                 </div>
               </div>
             </div>

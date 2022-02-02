@@ -15,6 +15,7 @@ import {HiddenFilterPipe} from './pipes/hidden-filter.pipe';
 import {ResumeComponent} from './resume/resume.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent},
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
     RouterModule.forRoot(appRoutes)
   ],
   entryComponents: [

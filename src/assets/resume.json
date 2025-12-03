@@ -31,6 +31,7 @@
       {"name": "Numpy"},
       {"name": "OpenCV"},
       {"name": "Angular"},
+      {"name": "React"},
       {"name": "Express"},
       {"name": "PostgreSQL"},
       {"name": "MySql"},
@@ -59,15 +60,18 @@
         "name": "Google",
         "title": "Software Engineer",
         "bullet_points": [
-          "Developed full-stack features for Google Web Search",
-          "Worked cross-team with UX, product managers, and other stakeholders to ensure delivered features met specifications and compliance standards.",
-          "Performed detailed A/B testing and test analysis to provide justification for launching features."
+          "Designed and implemented full-stack features for Google Web Search, ensuring alignment with UX, product specifications, and compliance standards through cross-functional collaboration with product managers and stakeholders.",
+          "Justified feature launches through detailed A/B testing and metric analysis.",
+          "Architected and executed large-scale data migrations.",
+          "Mentored interns and junior team members.",
+          "Trained and deployed LLM-based solutions at scale.",
+          "Identified and engineered solutions to fill data integration gaps between adjacent teams and nascent AI systems."
         ],
         "extra_info": [
           {"text": "Google", "icon": "assets/icons/link.svg", "url":"https://careers.google.com/"},
-          {"text": "Pittsburgh, Pennsylvania", "icon": "assets/icons/location.svg"},
+          {"text": "US Remote", "icon": "assets/icons/location.svg"},
           {"text": "August 2021 - Present", "icon": "assets/icons/calendar.svg"},
-          {"text": "Java, JavaScript, C++, HTML, CSS", "icon": "assets/icons/braces.svg"}
+          {"text": "C++, Java, Golang, TypeScript, HTML, CSS, Gemini", "icon": "assets/icons/braces.svg"}
         ]
       },
       {

@@ -12,13 +12,13 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## GitHub Pages deployment
 
-The repo ships with `.github/workflows/deploy.yml`, which builds the Angular app and publishes it to GitHub Pages on every push to `main` (or when manually dispatched). The workflow runs `npm ci`, builds with the production configuration, and sets the base HREF to `/${{ github.event.repository.name }}/` so the output works when served from the repo subpath.
+The repo ships with `.github/workflows/deploy.yml`, which builds the Angular app and publishes it to GitHub Pages on every push to `master` (or when manually dispatched). The workflow runs `npm ci`, builds with the production configuration, and hard-sets the base HREF to `/`, which matches the custom domain setup for `samcymbaluk.com`.
 
 To enable hosting:
 
 1. Push the workflow to GitHub.
 2. In the repository settings under **Pages**, set the source to **GitHub Actions** (this only needs to happen once).
-3. Merge changes into `main` or run the workflow manually to trigger a deploy.
+3. Merge changes into `master` or run the workflow manually to trigger a deploy.
 
-The deployment publishes the `dist/samcymbaluk` artifacts to the `github-pages` environment and sets the public URL automatically. If the repository name changes, the workflow continues to work because the base HREF flag is derived from the repo metadata.
+The deployment publishes the `dist/samcymbaluk` artifacts to the `github-pages` environment and sets the public URL automatically. Because the base HREF assumes the site lives at the domain root, this configuration is intended for custom-domain hosting rather than `username.github.io/repo` URLs.
 

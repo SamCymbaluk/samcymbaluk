@@ -33,7 +33,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/samcymbaluk/",
+              "baseHref": "/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
